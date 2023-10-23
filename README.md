@@ -1,1 +1,3 @@
-# circle_stuff
+# Circle Stuff
+
+Circle stuff using SFML.
