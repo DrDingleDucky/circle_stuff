@@ -96,6 +96,5 @@ void Circle::Movement(sf::RenderWindow &window, float deltaTime,
   } else {
     direction.y += gravity * deltaTime;
   }
-
   circle.move(sf::Vector2f(direction.x * deltaTime, direction.y * deltaTime));
 }
