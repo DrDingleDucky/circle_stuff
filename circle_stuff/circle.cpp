@@ -2,17 +2,13 @@
 
 constexpr auto PI = 3.14159265358979323846;
 
-Circle::Circle(float gravity, float mass, float damping, float friction, float bounce, float radius, sf::Color color, sf::Vector2f position) {
-    this->gravity = gravity;
-    this->mass = mass;
-    this->damping = damping;
-    this->friction = friction;
-    this->bounce = bounce;
+Circle::Circle(float gravity, float mass, float damping, float friction, float bounce, float radius,
+               sf::Color color, sf::Vector2f position)
+    : gravity(gravity), mass(mass), damping(damping), friction(friction), bounce(bounce),
+      mouseTouched(false), direction(sf::Vector2f(0.0f, 0.0f)) {
     circle.setRadius(radius);
     circle.setFillColor(color);
     circle.setPosition(position);
-    mouseTouched = false;
-    direction = sf::Vector2f(0.0f, 0.0f);
 };
 
 void Circle::update(sf::RenderWindow &window, float deltaTime, sf::RectangleShape floor) {

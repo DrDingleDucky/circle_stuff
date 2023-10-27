@@ -20,7 +20,7 @@ int main() {
                   1.65f,                         // bounce
                   50.0f,                         // radius
                   sf::Color(255, 255, 255, 255), // colour
-                  sf::Vector2f(605, 425));       // position
+                  sf::Vector2f(605, 425));       // pos
 
     sf::RectangleShape floor;
     floor.setFillColor(sf::Color(255, 255, 255, 255));
@@ -41,6 +41,7 @@ int main() {
 
         deltaTime = clock.restart().asSeconds();
         circle.update(window, deltaTime, floor);
+
         window.clear(sf::Color(64, 64, 64));
         circle.draw(window);
         window.draw(floor);
