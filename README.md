@@ -2,4 +2,4 @@
 
 Circle physics using SFML.
 
-![circle-stuff.png](README.assets/circle-stuff.png)
+![circle-stuff.gif](README.assets/circle-stuff.gif)
